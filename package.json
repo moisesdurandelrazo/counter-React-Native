@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "expo": "^48.0.6",
+    "expo": "^48.0.0",
+    "pokenode-ts": "^1.17.0",
     "react": "18.2.0",
     "react-native": "0.71.4",
     "react-redux": "^8.0.5"

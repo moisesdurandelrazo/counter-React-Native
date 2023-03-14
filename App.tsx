@@ -1,10 +1,11 @@
 import React from 'react';
-import {SafeAreaView, Text, useColorScheme} from 'react-native';
+import {View, Text, useColorScheme} from 'react-native';
 
 import {Provider} from 'react-redux';
 import {store} from './src/app/store';
 import Counter from './src/components/Counter';
 import ButtonRedux from './src/components/ButtonRedux';
+import PokemonList from './src/components/PokemonList';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -14,10 +15,9 @@ function App(): JSX.Element {
 
   return (
     <Provider store={store}>
-      <SafeAreaView>
-        <Counter />
-        <ButtonRedux />
-      </SafeAreaView>
+      <View>
+        <PokemonList/>
+      </View>
     </Provider>
   );
 }
